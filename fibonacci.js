@@ -1,3 +1,4 @@
+
 /*const prompt=require("prompt-sync")();
 const num = parseInt(prompt('Enter a number: '));
 console.log('Fibonacci Term');
@@ -12,6 +13,9 @@ for(let i=1;i<num;i++)
 
 console.log(term);
 */
+
+//RECURSIVE METHOD
+
 function fibonacci(n) {
 
     if (n <= 1)
