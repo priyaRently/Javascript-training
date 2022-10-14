@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(176, 176, 92);
+        }
+        div{
+            height:500px ; 
+            width:500px; 
+            background-color: cadetblue;
+            margin: auto;
+        }
+        button{
+            background-color: brown;
+            margin: 48%;
+        }
+    </style>
+</head>
+<body >
+    <!--
+    <button id="btn" >Click Me!</button>
+    <input type="text" id="inp" onchange="uprcase(this)">
+    <p id="para" onmouseover="moveOver(this)">This is a paragraph.</p>
+    -->
+
+    <div id="d">
+        <button id="b" style="">CLICK ME!</button>
+    </div>
+    <script>
+        
+        let div = document.getElementById('d');
+        let btn = document.getElementById('b');
+
+        btn.addEventListener('click',btnClick);
+        div.addEventListener('click',divClick);
+        document.body.addEventListener('click',bodyClick);
+
+        function btnClick(event){
+            console.log('button clicked');
+            event.stopPropagation();
+        }
+        function divClick(){
+            console.log('div clicked');
+        }
+        function bodyClick(){
+            console.log('body clicked');
+        }
+
+
+
+
+
+
+     /*   //*****DOM EVENTS*****
+
+        let inp=document.getElementById('inp');
+        function uprcase(x){
+            x.value=x.value.toUpperCase();
+        }
+
+        let para = document.getElementById('para');
+        function moveOver(obj){
+            obj.innerHTML = 'Thank You';
+            obj.style.backgroundColor = 'red';
+        }
+        para.addEventListener('mouseout',function(){
+            this.innerHTML= 'Back Again';
+            this.style.backgroundColor = 'white';
+        })
+        function btnClick(){
+            alert("Button Clicked");
+        }
+        let  btn = document.getElementById("btn");
+        btn.onclick=btnClick;
+        btn.addEventListener('click',function(){
+            alert("btn clicked");
+        });
+        btn.addEventListener('mouseover',function(){
+            console.log('mouse over is activated');
+        });
+        btn.addEventListener('mouseout',function(){
+            console.log('mouse out is activated');
+        });
+
+        let person={}
+        console.log(person);
+        
+        //*****CLASS AND OBJECT*****
+
+        class Shape {
+            constructor(){
+                this.color = 'red';
+                }
+            getColor(){
+                return this.color;
+                }
+            } 
+
+        class Rectangle extends Shape{
+
+            }
+
+        let rect = new Rectangle();
+
+        console.log(rect.getColor());
+        console.log(rect);
+
+        //*****CONSTRUCTOR FUNCTION*****
+
+        function Cons(name,age) {
+            this.name=name;
+            this.age=age;
+        }
+        var c = new Cons('Priya',22);
+        console.log(c);
+        */
+    </script>
+</body>
+</html>
