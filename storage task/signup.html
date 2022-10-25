@@ -12,27 +12,31 @@
 <body>
     <div class="signup-box">
         <h1>Sign Up</h1>
-        <form>
-            <label>First Name</label>
-            <input type="text" placeholder="" />
-            <label>Last Name</label>
-            <input type="text" placeholder="" />
-            <label>Email</label>
-            <input type="email" placeholder="" />
-            <label>Password</label>
-            <input type="password" placeholder="" />
-            <input type="button" value="Submit" />
+        <form id="myForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="password">
+            
+            <div class="btn">
+                <button id="sub">Submit</button>
+                <button id="log">Logout</button>
+            </div>
         </form>
         <p>
-            By clicking the Sign Up button,you agree to our <br />
+            By clicking the Sign Up button,you agree to our <br>
             <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
             .
         </p>
     </div>
     <p class="para-2">
-        Already have an account? <a href="login.html">Login here</a>
+        Already have an account? <a href="#">Login here</a>
     </p>
-
+    <script src="signup.js" defer></script>
 </body>
 
 </html>
